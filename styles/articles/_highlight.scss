@@ -1,0 +1,40 @@
+.news--highlight {
+    padding: 12px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+
+    h2 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .article--highlight {
+        width: 100%;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__details {
+            padding: 1rem;
+            border: 1px solid $lightergrey;
+        }
+    }
+
+    .article--highlight--3 {
+        
+    }
+
+    .article--highlight--4 {
+        
+    }
+
+    .article--highlight--5 {
+        
+    }
+
+    .article--highlight--6 {
+        
+    }
+}

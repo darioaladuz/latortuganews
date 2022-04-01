@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv=”Content-Language” content=”es”/>
+    <meta name="description" content="Noticias internacionales al instante, mantente informado las 24 horas del día.">
+    <meta name="keywords" content="noticias, news, diario, periodico, actualidad, politica, deportes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./assets/turtle.png" />
+    <title>La Tortuga News | Noticias internacionales al momento</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">
+            <img src="./assets/turtle.png" id="logo" /> 
+            La Tortuga
+        </h1>
+
+        <nav class="navbar navbar--header">
+            <ul>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Imágenes</a></li>
+                <li><a href="">Vídeos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn btn--menu">
+            <div class="hamburger">
+                <div class="line line--1"></div>
+                <div class="line line--2"></div>
+                <div class="line line--3"></div>
+            </div>
+        </button>
+    </header>
+
+    <main>
+        <section class="news news--highlight">
+            <h2 class="news__title">Noticias</h2>
+
+            <!-- generar artículos a partir de articles.json usando javascript (en un futuro se recogerán de la base de datos de MySQL). -->
+        </section>
+    </main>
+
+    <section class="news news--latest">
+        <h2>Noticias</h2>
+            <article class="article">
+                    <a class="article__link" href="./article.html?id=0">
+                        <img class="article__img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                    </a>
+                    <div class="article__details">
+                        <h3 class="article__details__title">Travel the World</h3>
+                        <p class="article__details__description">There's a new way to travel the World, and you'll learn all about it in this post.</p>
+                        <div class="article__controls">
+                            <button class="btn btn--previous"><</button>
+                            <button data-index="0" class="btn btn--index active"></button>
+                            <button data-index="1" class="btn btn--index"></button>
+                            <button data-index="2" class="btn btn--index"></button>
+                            <button class="btn btn--next">></button>
+                        </div>
+                    </div>
+            </article>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Dario Aladuz</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

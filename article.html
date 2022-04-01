@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/turtle.png" />
+    <title>La Tortuga News</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <img>
+    <!-- <a target="_blank" href="https://icons8.com/icon/46903/turtle">Turtle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <script>
+        const title = document.querySelector('h1');
+        const description = document.querySelector('p');
+        const img = document.querySelector('img');
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get("id");
+        
+        let article = null;
+
+        const getArticle = async () => {
+            const response = await fetch('articles.json');
+            const json = await response.json();
+
+            article = json.find(jsonArticle => jsonArticle.id === Number(id));
+
+            title.textContent = article.title;
+            description.textContent = article.description;
+            img.src = article.img;
+
+            document.title = `${article.title} | La Tortuga News`
+            console.log(article);
+        }
+
+        getArticle();
+
+    </script>
+</body>
+</html>

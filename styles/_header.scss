@@ -1,0 +1,104 @@
+header {
+    padding: 12px;
+    position: sticky;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    background: white;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        #logo {
+            width: 48px;
+        }
+    }
+
+    .navbar--header {
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        padding: 24px;
+        min-height: 300px;
+        background: white;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        border: 1px solid black;
+        border-radius: 12px;
+        transform: translateY(-200%);
+        transition: .6s ease-in-out;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            text-align: center;
+
+            li {
+                padding: 12px;
+                padding-bottom: 24px;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $lightergrey;
+                }
+
+                &:hover {
+
+                    a{
+                        color: $darkgrey;
+                    }
+                }
+
+                a {
+                    font-size: 1.5rem;
+                    color: $mediumgrey;
+                }
+            }
+        }
+
+        &.show {
+            transform: translate(0);
+        }
+    }
+
+    .btn--menu {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        img {
+            width: 32px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    header {
+        .navbar--header {
+            position: relative;
+            top: 0;
+            left: 0;
+            border: none;
+            display: block;
+            transform: translate(0);
+            height: auto;
+            min-height: auto;
+
+            ul {
+                flex-direction: row;
+                li {
+                    border-bottom: $lightgrey !important;
+                }
+            }
+        }
+
+        .btn--menu {
+            display: none;
+        }
+    }
+}

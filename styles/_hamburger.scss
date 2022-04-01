@@ -1,0 +1,26 @@
+.hamburger {
+	cursor: pointer;
+
+    .line {
+        width: 32px;
+        height: 4px;
+        background: black;
+        margin: 6px;
+        transition: 0.6s ease-in-out;
+    }
+
+    &.active {
+        .line--1 {
+            transform: rotate(45deg) translate(8px, 7px);
+        }
+
+        .line--2 {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        .line--3 {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+    }
+}

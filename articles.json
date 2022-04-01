@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Travel the World",
+        "img": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "description": "There's a new way to travel the World, and you'll learn all about it in this post.",
+        "id": 0,
+        "type": "latest"
+    },
+    {
+        "title": "JDM cars are the best",
+        "img": "https://images.unsplash.com/photo-1605907153179-8b364644a241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80",
+        "description": "50 reasons why JDM cars are the most amazing cars to ever exist, lorem ipsum blablabla.",
+        "id": 1,
+        "type": "latest"
+    },
+    {
+        "title": "Light pollution sucks",
+        "img": "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "description": "A few ways to fight against this bullcrap!",
+        "id": 2,
+        "type": "latest"
+    },
+    {
+        "title": "Northern Lights are amazing",
+        "img": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "description": "There's a few ways you can enjoy the Northern Lights and we'll explain them in this article.",
+        "id": 3,
+        "type": "highlight"
+    },
+    {
+        "title": "Indonesia's beautiful Bali",
+        "img": "https://images.unsplash.com/photo-1558005530-a7958896ec60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+        "description": "We are going there no matter what.",
+        "id": 4,
+        "type": "highlight"
+    },
+    {
+        "title": "Paris is centric af",
+        "img": "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1623&q=80",
+        "description": "50 facts about Paris and France in general",
+        "id": 5,
+        "type": "highlight"
+    },
+    {
+        "title": "Japan",
+        "img": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "description": "Do I have to say anything else?",
+        "id": 6,
+        "type": "highlight"
+    }
+]
